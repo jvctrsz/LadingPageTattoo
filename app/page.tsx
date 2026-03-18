@@ -1,65 +1,134 @@
-import Image from "next/image";
+"use client";
+
+import { motion } from "motion/react";
+import { featuredWorks } from "./Utils/mockData";
+import Link from "next/link";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <div className="bg-white">
+      <section className="py-24 lg:py-32 bg-neutral-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="order-2 lg:order-1"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              <div className="text-black/40 text-sm uppercase tracking-[0.3em] mb-6">
+                Tatuadora
+              </div>
+              <h2 className="text-4xl lg:text-5xl mb-6 text-black/40">
+                Julia Pedrozo
+              </h2>
+              <p className="text-lg text-black/70 mb-6 leading-relaxed">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent sed justo eget arcu malesuada tincidunt quis vitae
+                velit. Praesent tempor mi id est dapibus laoreet. Vestibulum
+                eget suscipit augue. Curabitur vel tellus at magna fermentum
+                interdum. In vel tellus euismod.
+              </p>
+              <p className="text-lg text-black/70 mb-8 leading-relaxed">
+                Fusce orci sem, maximus et enim ac, pharetra tincidunt mauris.
+                Aliquam at nibh eget leo hendrerit blandit ut vitae tellus.
+                Pellentesque eu tortor vel arcu mollis laoreet quis at lorem.
+                Mauris nec est eget nisl venenatis tempus quis et dui. Sed eget
+                sollicitudin mauris, vel congue justo.
+              </p>
+              <Link
+                href="/about"
+                className="inline-flex items-center gap-2 border text-black border-black px-6 py-3 text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors"
+              >
+                Saiba Mais
+                <ArrowRightIcon className="size-4" />
+              </Link>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="order-1 lg:order-2"
             >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              <div className="aspect-3/4 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1769605767701-6e5a680ef685?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMHRhdHRvbyUyMGFydGlzdCUyMGNyZWF0aXZlfGVufDF8fHx8MTc3MzcxNzA3NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  alt="Alex River - Tattoo Artist"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </motion.div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+      </section>
+
+      <section className="py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-4xl lg:text-6xl">
+                <span className="text-3xl">Trabalhos</span>
+                <br />
+                <span className="text-black/40">Finalizados</span>
+              </h2>
+              <Link
+                href="/portfolio"
+                className="hidden sm:inline-flex items-center gap-2 text-sm uppercase tracking-wider hover:gap-4 transition-all text-black"
+              >
+                Ver Todos
+                <ArrowRightIcon className="size-4" />
+              </Link>
+            </div>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+            {featuredWorks.map((work, index) => (
+              <motion.div
+                key={work.id}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="group relative aspect-4/5 overflow-hidden bg-black"
+              >
+                <img
+                  src={work.image}
+                  alt={work.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="self-end absolute bottom-0 left-0 right-0 p-6 inset-0 bg-linear-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <span className="text-white/60 text-xs uppercase tracking-wider mb-2">
+                    {work.category}
+                  </span>
+                  <h3 className="text-white text-2xl">{work.title}</h3>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="mt-8 text-center sm:hidden">
+            <Link
+              href="/portfolio"
+              className="inline-flex items-center gap-2 text-sm uppercase tracking-wider"
+            >
+              Ver Todos
+              <ArrowRightIcon className="size-4" />
+            </Link>
+          </div>
         </div>
-      </main>
+      </section>
     </div>
   );
 }
