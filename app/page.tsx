@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { featuredWorks } from "./Utils/mockData";
+import { featuredWorks } from "../src/Utils/mockData";
 import Link from "next/link";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
@@ -39,7 +39,7 @@ export default function Home() {
                 sollicitudin mauris, vel congue justo.
               </p>
               <Link
-                href="/about"
+                href="/sobre"
                 className="inline-flex items-center gap-2 border text-black border-black px-6 py-3 text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors"
               >
                 Saiba Mais
@@ -57,7 +57,7 @@ export default function Home() {
               <div className="aspect-3/4 overflow-hidden">
                 <img
                   src="https://images.unsplash.com/photo-1769605767701-6e5a680ef685?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMHRhdHRvbyUyMGFydGlzdCUyMGNyZWF0aXZlfGVufDF8fHx8MTc3MzcxNzA3NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                  alt="Alex River - Tattoo Artist"
+                  alt="Tattoo Artist"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
