@@ -2,8 +2,7 @@
 
 import { motion } from "motion/react";
 import { featuredWorks } from "../src/Utils/mockData";
-import Link from "next/link";
-import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import { ButtonNav } from "./Components";
 
 export default function Home() {
   return (
@@ -38,13 +37,7 @@ export default function Home() {
                 Mauris nec est eget nisl venenatis tempus quis et dui. Sed eget
                 sollicitudin mauris, vel congue justo.
               </p>
-              <Link
-                href="/sobre"
-                className="inline-flex items-center gap-2 border text-black border-black px-6 py-3 text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors"
-              >
-                Saiba Mais
-                <ArrowRightIcon className="size-4" />
-              </Link>
+              <ButtonNav path="/sobre">Saiba Mais</ButtonNav>
             </motion.div>
 
             <motion.div
@@ -82,13 +75,7 @@ export default function Home() {
                 <br />
                 <span className="text-black/40">Finalizados</span>
               </h2>
-              <Link
-                href="/portfolio"
-                className="hidden sm:inline-flex items-center gap-2 text-sm uppercase tracking-wider hover:gap-4 transition-all text-black"
-              >
-                Ver Todos
-                <ArrowRightIcon className="size-4" />
-              </Link>
+              <ButtonNav path="/portfolio">Ver Todos</ButtonNav>
             </div>
           </motion.div>
 
@@ -119,13 +106,7 @@ export default function Home() {
           </div>
 
           <div className="mt-8 text-center sm:hidden">
-            <Link
-              href="/portfolio"
-              className="inline-flex items-center gap-2 text-sm uppercase tracking-wider"
-            >
-              Ver Todos
-              <ArrowRightIcon className="size-4" />
-            </Link>
+            <ButtonNav path="/portfolio">Ver Todos</ButtonNav>
           </div>
         </div>
       </section>
