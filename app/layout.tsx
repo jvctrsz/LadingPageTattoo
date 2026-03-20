@@ -25,18 +25,20 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-br">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-white`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
-        <a
-          href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-100 focus:bg-black focus:text-white focus:px-4 focus:py-2"
-        >
-          Ir para a tela inicial.
-        </a>
-        <Navigation />
-        <main id="main-content">{children}</main>
-        <Footer />
-        <FloatingContact />
+        <div className="min-h-screen bg-white">
+          <a
+            href="#main-content"
+            className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-100 focus:bg-black focus:text-white focus:px-4 focus:py-2"
+          >
+            Ir para a tela inicial.
+          </a>
+          <Navigation />
+          <main id="main-content">{children}</main>
+          <Footer />
+          <FloatingContact />
+        </div>
       </body>
     </html>
   );
