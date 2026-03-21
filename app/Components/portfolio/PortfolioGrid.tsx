@@ -1,0 +1,51 @@
+"use client";
+
+import { useState } from "react";
+import { portfolioItems } from "@/src/Utils/mockData";
+import { classNames } from "@/src/miscellaneous";
+import { PortfolioGallery } from "./PortfolioGallery";
+
+const categories = ["All", "Fine Line", "Blackwork", "Floral"];
+
+export const PortfolioGrid = () => {
+  const [activeFilter, setActiveFilter] = useState("All");
+
+  const filteredItems =
+    activeFilter === "All"
+      ? portfolioItems
+      : portfolioItems.filter((item) => item.category === activeFilter);
+
+  return (
+    <>
+      <nav
+        aria-label="Filtrar por categoria"
+        className="py-8 sticky top-20 bg-white z-40 border-b border-black/10"
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ul className="flex gap-3 overflow-x-auto pb-2">
+            {categories.map((category) => (
+              <li key={category}>
+                <button
+                  onClick={() => setActiveFilter(category)}
+                  aria-pressed={activeFilter === category}
+                  className={classNames(
+                    "px-6 py-2 text-sm uppercase tracking-wider whitespace-nowrap transition-all",
+                    activeFilter === category
+                      ? "bg-black text-white"
+                      : "bg-neutral-100 text-black hover:bg-neutral-200"
+                  )}
+                >
+                  {category}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
+
+      <PortfolioGallery filteredItems={filteredItems} activeFilter={activeFilter} />
+    </>
+  );
+};
+
+export default PortfolioGrid;
