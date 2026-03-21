@@ -69,7 +69,7 @@ const FAQ = () => {
               sed justo eget arcu malesuada tincidunt quis vitae velit.
             </p>
             <a
-              href="/contact"
+              href="/contatos"
               className="inline-flex items-center gap-2 bg-black text-white px-8 py-4 text-sm uppercase tracking-wider hover:bg-black/90 transition-colors"
             >
               Entre em contato

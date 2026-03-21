@@ -6,6 +6,7 @@ import { useState } from "react";
 import { FaInstagram, FaPaperPlane, FaWhatsapp } from "react-icons/fa";
 import { FaMapLocation } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import PageHeader from "../Components/PageHeader";
 
 const Contacts = () => {
   const [formData, setFormData] = useState({
@@ -34,25 +35,7 @@ const Contacts = () => {
 
   return (
     <div>
-      {/* Hero */}
-      <section className="py-14 lg:pt-20 bg-black text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="text-white/60 text-sm uppercase tracking-[0.3em] mb-4">
-              Contatos
-            </div>
-            <h1 className="text-3xl lg:text-5xl">
-              Vamos criar
-              <br />
-              <span className="text-white/40">Juntos</span>
-            </h1>
-          </motion.div>
-        </div>
-      </section>
+      <PageHeader title="Vamos Criar" subTitle="Juntos" page="Contatos" />
 
       <section className="py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
