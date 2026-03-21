@@ -94,3 +94,21 @@ export const portfolioItems = [
     category: "Blackwork",
   },
 ];
+
+export const faqs = [
+  {
+    question: "Fazer tatuagem doi?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed justo eget arcu malesuada tincidunt quis vitae velit.",
+  },
+  {
+    question: "Quanto custa uma tatuagem?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed justo eget arcu malesuada tincidunt quis vitae velit.",
+  },
+  {
+    question: "Como eu me preparo para fazer uma tatuagem?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed justo eget arcu malesuada tincidunt quis vitae velit.",
+  },
+];
