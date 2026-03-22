@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import { type ChangeEvent, useState } from "react";
 import { FaPaperPlane } from "react-icons/fa";
+import ContactField from "./ContactField";
 
 const bodyPlacements = [
   "Braço",
@@ -19,7 +20,6 @@ const bodyPlacements = [
 
 const inputClass =
   "w-full px-4 py-3 border border-black/20 focus:border-black focus:outline-none transition-colors";
-const labelClass = "block text-sm uppercase tracking-wider mb-2 text-gray-400";
 
 export const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -52,12 +52,11 @@ export const ContactForm = () => {
       transition={{ duration: 0.6 }}
     >
       <fieldset className="contents" aria-label="Dados pessoais e tatuagem">
-        <legend className="sr-only">Dados pessoais e detalhes da tatuagem</legend>
+        <legend className="sr-only">
+          Dados pessoais e detalhes da tatuagem
+        </legend>
 
-        <div>
-          <label htmlFor="name" className={labelClass}>
-            Nome *
-          </label>
+        <ContactField label="Nome" name="name">
           <input
             type="text"
             id="name"
@@ -68,12 +67,9 @@ export const ContactForm = () => {
             autoComplete="name"
             className={inputClass}
           />
-        </div>
+        </ContactField>
 
-        <div>
-          <label htmlFor="email" className={labelClass}>
-            Email *
-          </label>
+        <ContactField label="Email" name="email">
           <input
             type="email"
             id="email"
@@ -84,12 +80,9 @@ export const ContactForm = () => {
             autoComplete="email"
             className={inputClass}
           />
-        </div>
+        </ContactField>
 
-        <div>
-          <label htmlFor="phone" className={labelClass}>
-            Celular
-          </label>
+        <ContactField label="Celular" name="phone">
           <input
             type="tel"
             id="phone"
@@ -99,12 +92,9 @@ export const ContactForm = () => {
             autoComplete="tel"
             className={inputClass}
           />
-        </div>
+        </ContactField>
 
-        <div>
-          <label htmlFor="tattooIdea" className={labelClass}>
-            Ideia de Tatuagem *
-          </label>
+        <ContactField label="Ideia de Tatuagem" name="tattooIdea">
           <input
             type="text"
             id="tattooIdea"
@@ -115,12 +105,9 @@ export const ContactForm = () => {
             placeholder="Ex: Fine line floral"
             className={inputClass}
           />
-        </div>
+        </ContactField>
 
-        <div>
-          <label htmlFor="placement" className={labelClass}>
-            Local do Corpo *
-          </label>
+        <ContactField label="Local do Corpo" name="placement">
           <select
             id="placement"
             name="placement"
@@ -136,12 +123,13 @@ export const ContactForm = () => {
               </option>
             ))}
           </select>
-        </div>
+        </ContactField>
 
-        <div>
-          <label htmlFor="message" className={labelClass}>
-            Detalhes Adicionais
-          </label>
+        <ContactField
+          required={false}
+          label="Detalhes Adicionais"
+          name="message"
+        >
           <textarea
             id="message"
             name="message"
@@ -151,7 +139,7 @@ export const ContactForm = () => {
             placeholder="Referências, tamanho preferido, ou outras informações..."
             className={`${inputClass} resize-none`}
           />
-        </div>
+        </ContactField>
       </fieldset>
 
       <button
