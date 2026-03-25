@@ -6,17 +6,17 @@ const specializations = [
   {
     title: "Fine Line",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed justo eget arcu malesuada tincidunt quis vitae velit.",
+      "Traços delicados e precisos que resultam em tatuagens de extremo refinamento. Ideal para quem busca leveza, feminilidade e detalhes sutis na pele.",
   },
   {
     title: "Blackwork",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed justo eget arcu malesuada tincidunt quis vitae velit.",
+      "Composições marcantes em tinta preta, com forte apelo visual e durabilidade. Perfeito para quem quer personalidade e presença em cada traço.",
   },
   {
     title: "Floral",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed justo eget arcu malesuada tincidunt quis vitae velit.",
+      "Flores, folhas e botanicals interpretados com sensibilidade artística. Cada peça é única, carregando a delicadeza da natureza para a sua pele.",
   },
 ];
 

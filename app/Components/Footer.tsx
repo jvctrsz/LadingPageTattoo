@@ -11,7 +11,7 @@ const Footer = () => {
             JULIA<span className="text-white/60">PEDROZO</span>
           </h3>
           <p className="text-white/60">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Tatuadora especialista em Fine Line, Blackwork e Floral. Sinop - MT.
           </p>
         </div>
 
