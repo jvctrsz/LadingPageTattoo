@@ -5,13 +5,13 @@ import { portfolioItems } from "@/src/Utils/mockData";
 import { classNames } from "@/src/miscellaneous";
 import { PortfolioGallery } from "./PortfolioGallery";
 
-const categories = ["All", "Fine Line", "Blackwork", "Floral"];
+const categories = ["Todos", "Fine Line", "Blackwork", "Floral"];
 
 export const PortfolioGrid = () => {
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [activeFilter, setActiveFilter] = useState("Todos");
 
   const filteredItems =
-    activeFilter === "All"
+    activeFilter === "Todos"
       ? portfolioItems
       : portfolioItems.filter((item) => item.category === activeFilter);
 

@@ -6,7 +6,10 @@ import { ButtonNav } from "@/app/Components";
 
 export const FeaturedWorksSection = () => {
   return (
-    <section aria-label="Galeria de Trabalhos em Destaque" className="py-24 lg:py-32">
+    <section
+      aria-label="Galeria de Trabalhos em Destaque"
+      className="py-24 lg:py-32"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -57,7 +60,10 @@ export const FeaturedWorksSection = () => {
           ))}
         </ul>
 
-        <nav aria-label="Ver portfólio completo" className="mt-8 text-center sm:hidden">
+        <nav
+          aria-label="Ver portfólio completo"
+          className="mt-8 text-center sm:hidden"
+        >
           <ButtonNav path="/portfolio">Ver Todos</ButtonNav>
         </nav>
       </div>
