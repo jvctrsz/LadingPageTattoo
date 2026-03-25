@@ -13,20 +13,20 @@ interface FAQItemProps {
 const FAQItem = ({ question, answer, isOpen, onToggle }: FAQItemProps) => {
   return (
     <div className="border-b border-black/10">
-      <button
-        onClick={onToggle}
-        className="w-full py-6 flex items-start justify-between gap-4 text-left hover:opacity-70 transition-opacity"
-        aria-expanded={isOpen}
-      >
-        <h3 className="text-xl flex-1 text-gray-500">{question}</h3>
-        <div className="shrink-0 w-6 h-6 flex items-center justify-center">
+      <h3>
+        <button
+          onClick={onToggle}
+          className="w-full py-6 flex items-start justify-between gap-4 text-left hover:opacity-70 transition-opacity"
+          aria-expanded={isOpen}
+        >
+          <span className="text-xl flex-1 text-black/50">{question}</span>
           {isOpen ? (
-            <MinusIcon className="size-4 text-gray-500" />
+            <MinusIcon className="size-4 shrink-0 text-black/50" />
           ) : (
-            <PlusIcon className="size-4 text-gray-500" />
+            <PlusIcon className="size-4 shrink-0 text-black/50" />
           )}
-        </div>
-      </button>
+        </button>
+      </h3>
       {isOpen && (
         <motion.div
           initial={{ opacity: 0, height: 0 }}

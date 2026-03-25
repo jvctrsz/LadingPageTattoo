@@ -45,7 +45,10 @@ export const HeroDesktop = () => {
 
           <h1
             className="font-bold leading-none text-black/90 mb-6"
-            style={{ fontSize: "clamp(5rem, 9vw, 9rem)", letterSpacing: "-0.03em" }}
+            style={{
+              fontSize: "clamp(5rem, 9vw, 9rem)",
+              letterSpacing: "-0.03em",
+            }}
           >
             Julia
             <br />
