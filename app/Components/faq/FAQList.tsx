@@ -3,10 +3,10 @@
 import { faqs } from "@/src/Utils/mockData";
 import { motion } from "motion/react";
 import { useState } from "react";
-import FAQItem from "@/app/faq/FAQItem";
+import FAQItem from "@/app/Components/faq/FAQItem";
 
 export const FAQList = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
     <section aria-label="Perguntas frequentes">

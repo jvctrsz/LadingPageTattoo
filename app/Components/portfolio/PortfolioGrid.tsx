@@ -22,7 +22,7 @@ export const PortfolioGrid = () => {
         className="py-8 sticky top-20 bg-white z-40 border-b border-black/10"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ul className="flex gap-3 overflow-x-auto pb-2">
+          <ul className="flex flex-wrap gap-3 pb-2">
             {categories.map((category) => (
               <li key={category}>
                 <button
