@@ -55,7 +55,7 @@ const contactItems = [
 ];
 
 const scheduleItems = [
-  { day: "Seg - Sex", hours: "14:30 - 17:00" },
+  { day: "Seg - Sex", hours: "09:00 - 20:00" },
   { day: "Sábados", hours: "14:30 - 17:00" },
   { day: "Domingo", hours: "Fechado" },
 ];

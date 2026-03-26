@@ -22,7 +22,10 @@ const specializations = [
 
 export const AboutSpecializationsSection = () => {
   return (
-    <section aria-label="Especializações" className="py-24 lg:py-32 bg-neutral-50">
+    <section
+      aria-label="Especializações"
+      className="py-24 lg:py-32 bg-neutral-50"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -44,8 +47,10 @@ export const AboutSpecializationsSection = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="text-center"
             >
-              <h3 className="text-2xl mb-4 text-gray-400">{spec.title}</h3>
-              <p className="text-black/70 leading-relaxed">{spec.description}</p>
+              <h3 className="text-2xl mb-4 text-black/30">{spec.title}</h3>
+              <p className="text-black/70 leading-relaxed">
+                {spec.description}
+              </p>
             </motion.li>
           ))}
         </ul>
