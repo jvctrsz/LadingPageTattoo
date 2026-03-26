@@ -3,6 +3,7 @@
 import { WHATSAPP_URL } from "@/src/config";
 import { motion } from "motion/react";
 import { FaWhatsapp } from "react-icons/fa";
+import SectionTitle from "../SectionTitle";
 
 const ContactWhatsAppCTA = () => {
   return (
@@ -14,9 +15,7 @@ const ContactWhatsAppCTA = () => {
       className="flex flex-col gap-8"
     >
       <hgroup className="space-y-6">
-        <h2 className="text-3xl lg:text-4xl">
-          Pronta para sua <span className="text-black/40">próxima tattoo?</span>
-        </h2>
+        <SectionTitle title="Preparado" subTitle="para sua próxima tattoo?" />
         <p className="text-black/70 leading-relaxed text-lg">
           O jeito mais rápido de agendar é pelo WhatsApp. Me manda uma mensagem
           com sua ideia, referências e o local do corpo — e a gente conversa!

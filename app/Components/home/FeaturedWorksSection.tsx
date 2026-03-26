@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import { featuredWorks } from "@/src/Utils/mockData";
 import { ButtonNav } from "@/app/Components";
+import SectionTitle from "../SectionTitle";
 
 export const FeaturedWorksSection = () => {
   return (
@@ -18,11 +19,7 @@ export const FeaturedWorksSection = () => {
           transition={{ duration: 0.6 }}
           className="flex items-center justify-between mb-16"
         >
-          <h2 className="text-4xl lg:text-6xl">
-            <span className="text-3xl">Trabalhos</span>
-            <br />
-            <span className="text-black/40">Finalizados</span>
-          </h2>
+          <SectionTitle title="Trabalhos" subTitle="Finalizados" />
           <nav aria-label="Ver portfólio completo" className="hidden sm:block">
             <ButtonNav path="/portfolio">Ver Todos</ButtonNav>
           </nav>

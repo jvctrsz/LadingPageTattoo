@@ -1,6 +1,11 @@
 "use client";
 
-import { EMAIL, INSTAGRAM_HANDLE, INSTAGRAM_URL, WHATSAPP_URL } from "@/src/config";
+import {
+  EMAIL,
+  INSTAGRAM_HANDLE,
+  INSTAGRAM_URL,
+  WHATSAPP_URL,
+} from "@/src/config";
 import { motion } from "motion/react";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { FaMapLocation } from "react-icons/fa6";

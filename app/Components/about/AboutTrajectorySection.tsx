@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import SectionTitle from "../SectionTitle";
 
 export const AboutTrajectorySection = () => {
   return (
@@ -28,11 +29,7 @@ export const AboutTrajectorySection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl lg:text-5xl mb-8">
-              Minha
-              <br />
-              <span className="text-black/40">Trajetória</span>
-            </h2>
+            <SectionTitle title="Minha" subTitle="Trajetória" />
             <div className="space-y-6 text-lg text-black/70 leading-relaxed">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
