@@ -14,13 +14,13 @@ const ContactWhatsAppCTA = () => {
       transition={{ duration: 0.6 }}
       className="flex flex-col gap-8"
     >
-      <hgroup className="space-y-6">
+      <div className="space-y-6">
         <SectionTitle title="Preparado" subTitle="para sua próxima tattoo?" />
         <p className="text-black/70 leading-relaxed text-lg">
           O jeito mais rápido de agendar é pelo WhatsApp. Me manda uma mensagem
           com sua ideia, referências e o local do corpo — e a gente conversa!
         </p>
-      </hgroup>
+      </div>
 
       <a
         href={WHATSAPP_URL}

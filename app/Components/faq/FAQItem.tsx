@@ -15,9 +15,11 @@ const FAQItem = ({ question, answer, isOpen, onToggle }: FAQItemProps) => {
     <div className="border-b border-black/10">
       <h3>
         <button
+          id={`faq-btn-${question.replace(/\s+/g, "-").toLowerCase()}`}
           onClick={onToggle}
           className="w-full py-6 flex items-start justify-between gap-4 text-left hover:opacity-70 transition-opacity"
           aria-expanded={isOpen}
+          aria-controls={`faq-content-${question.replace(/\s+/g, "-").toLowerCase()}`}
         >
           <span className="text-xl flex-1 text-black/50">{question}</span>
           {isOpen ? (
@@ -29,6 +31,9 @@ const FAQItem = ({ question, answer, isOpen, onToggle }: FAQItemProps) => {
       </h3>
       {isOpen && (
         <motion.div
+          id={`faq-content-${question.replace(/\s+/g, "-").toLowerCase()}`}
+          role="region"
+          aria-labelledby={`faq-btn-${question.replace(/\s+/g, "-").toLowerCase()}`}
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
           exit={{ opacity: 0, height: 0 }}

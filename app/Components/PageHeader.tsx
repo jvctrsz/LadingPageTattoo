@@ -27,18 +27,15 @@ const PageHeader = ({ page, subTitle, title }: PageHeaderProps) => {
             <div className="flex-1 h-px bg-black/10" />
           </div>
 
-          <header>
-            <h1
-              className="font-bold leading-none text-black/90"
-              style={{
-                fontSize: "clamp(2.5rem, 5vw, 5rem)",
-                letterSpacing: "-0.03em",
-              }}
-            >
-              {title}{" "}
-              <span className="font-light text-black/30">{subTitle}</span>
-            </h1>
-          </header>
+          <h1
+            className="font-bold leading-none text-black/90"
+            style={{
+              fontSize: "clamp(2.5rem, 5vw, 5rem)",
+              letterSpacing: "-0.03em",
+            }}
+          >
+            {title} <span className="font-light text-black/30">{subTitle}</span>
+          </h1>
         </motion.div>
       </div>
     </section>

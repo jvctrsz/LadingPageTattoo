@@ -33,28 +33,26 @@ export const HeroDesktop = () => {
         transition={{ duration: 0.9, ease: [0.25, 0.46, 0.45, 0.94] }}
         className="relative z-10 max-w-3xl"
       >
-        <header>
-          <motion.p
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-black/40 text-xs uppercase tracking-[0.35em] mb-5"
-          >
-            Tatuadora · Sinop, MT
-          </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="text-black/40 text-xs uppercase tracking-[0.35em] mb-5"
+        >
+          Tatuadora · Sinop, MT
+        </motion.p>
 
-          <h1
-            className="font-bold leading-none text-black/90 mb-6"
-            style={{
-              fontSize: "clamp(5rem, 9vw, 9rem)",
-              letterSpacing: "-0.03em",
-            }}
-          >
-            Julia
-            <br />
-            Pedrozo
-          </h1>
-        </header>
+        <h1
+          className="font-bold leading-none text-black/90 mb-6"
+          style={{
+            fontSize: "clamp(5rem, 9vw, 9rem)",
+            letterSpacing: "-0.03em",
+          }}
+        >
+          Julia
+          <br />
+          Pedrozo
+        </h1>
 
         <p className="text-base text-black/65 mb-8 leading-relaxed max-w-sm">
           Especialista em Blackwork e Fine Line. Cada traço nascido com

@@ -57,6 +57,7 @@ const Navigation = () => {
                     ? "text-white"
                     : "text-white/60 hover:text-white",
                 )}
+                aria-current={pathname === link.path ? "page" : undefined}
               >
                 {link.label}
               </Link>
@@ -84,7 +85,7 @@ const Navigation = () => {
               exit={{ opacity: 0, height: 0 }}
               className="md:hidden overflow-hidden"
             >
-              <div className="flex flex-col gap-4 pt-6 pb-4">
+              <div className="flex flex-col gap-4 pt-6 pb-4" role="list">
                 {navLinks.map((link) => (
                   <Link
                     key={link.path}
@@ -93,6 +94,8 @@ const Navigation = () => {
                       "text-sm uppercase tracking-wider transition-colors",
                       pathname === link.path ? "text-white" : "text-white/60",
                     )}
+                    aria-current={pathname === link.path ? "page" : undefined}
+                    role="listitem"
                   >
                     {link.label}
                   </Link>

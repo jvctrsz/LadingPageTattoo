@@ -37,14 +37,15 @@ export const HeroMobile = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <header>
-              <p className="text-black/40 text-sm uppercase tracking-[0.3em] mb-4">
-                Tatuadora
-              </p>
-              <h1 className="text-4xl font-bold mb-4 text-black/90">
-                Julia Pedrozo
-              </h1>
-            </header>
+            <p className="text-black/40 text-sm uppercase tracking-[0.3em] mb-4">
+              Tatuadora
+            </p>
+            <h1
+              className="text-4xl font-bold mb-4 text-black/90"
+              aria-hidden="true"
+            >
+              Julia Pedrozo
+            </h1>
             <p className="text-base text-black/65 mb-8 leading-relaxed">
               Especialista em Blackwork e Fine Line. Cada traço nascido com
               intenção, cada tatuagem uma história única na sua pele.

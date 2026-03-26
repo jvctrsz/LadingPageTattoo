@@ -6,7 +6,16 @@ export const metadata: Metadata = {
   title: "Julia Pedrozo Tattoo | Tatuadora em Sinop - MT",
   description:
     "Portfólio de Julia Pedrozo, tatuadora especialista em Fine Line, Blackwork e Floral em Sinop - MT. Agende sua tatuagem.",
-  keywords: ["tatuadora", "tattoo", "sinop", "fine line", "blackwork", "floral", "julia pedrozo"],
+  keywords: [
+    "tatuadora",
+    "tattoo",
+    "sinop",
+    "fine line",
+    "blackwork",
+    "anime",
+    "old school",
+    "julia pedrozo",
+  ],
   openGraph: {
     title: "Julia Pedrozo Tattoo | Tatuadora em Sinop - MT",
     description:
@@ -18,9 +27,9 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="bg-white">
+    <div className="bg-white">
       <HeroSection />
       <FeaturedWorksSection />
-    </main>
+    </div>
   );
 }

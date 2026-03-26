@@ -18,7 +18,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Julia Pedrozo Tattoo",
-  description: "Portfólio Julia Pedrozo",
+  description:
+    "Portfólio de Julia Pedrozo, tatuadora especialista em Fine Line, Blackwork e outros estilos em Sinop - MT. Agende sua sessão.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -32,7 +33,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             href="#main-content"
             className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-100 focus:bg-black focus:text-white focus:px-4 focus:py-2"
           >
-            Ir para a tela inicial.
+            Ir para o conteúdo principal
           </a>
           <Navigation />
           <main id="main-content">{children}</main>
