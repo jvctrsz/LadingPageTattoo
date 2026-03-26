@@ -21,10 +21,10 @@ export const HeroDesktop = () => {
           alt="Julia Pedrozo - Tatuadora em Sinop, MT"
           fill
           sizes="58vw"
-          className="object-cover grayscale-[20%]"
+          className="object-cover grayscale-20"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-neutral-50 via-neutral-50/30 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-r from-neutral-50 via-neutral-50/30 to-transparent" />
       </motion.div>
 
       <motion.div
@@ -57,7 +57,7 @@ export const HeroDesktop = () => {
         </header>
 
         <p className="text-base text-black/65 mb-8 leading-relaxed max-w-sm">
-          Especialista em Fine Line, Blackwork e Floral. Cada traço nascido com
+          Especialista em Blackwork e Fine Line. Cada traço nascido com
           intenção, cada tatuagem uma história única na sua pele.
         </p>
 

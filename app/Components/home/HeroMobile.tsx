@@ -46,8 +46,8 @@ export const HeroMobile = () => {
               </h1>
             </header>
             <p className="text-base text-black/65 mb-8 leading-relaxed">
-              Especialista em Fine Line, Blackwork e Floral. Cada traço nascido
-              com intenção, cada tatuagem uma história única na sua pele.
+              Especialista em Blackwork e Fine Line. Cada traço nascido com
+              intenção, cada tatuagem uma história única na sua pele.
             </p>
             <ButtonNav path="/sobre">Saiba Mais</ButtonNav>
           </motion.div>
