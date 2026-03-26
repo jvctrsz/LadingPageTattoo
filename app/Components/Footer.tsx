@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { EMAIL, INSTAGRAM_URL, WHATSAPP_URL } from "@/src/config";
 
 const Footer = () => {
   return (
@@ -51,7 +52,7 @@ const Footer = () => {
           <h4 className="text-sm uppercase tracking-wider mb-4">Contatos</h4>
           <div className="flex gap-4">
             <a
-              href="https://www.instagram.com/jpyoarttattoo/"
+              href={INSTAGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/60 hover:text-white transition-colors hover:scale-110"
@@ -60,14 +61,14 @@ const Footer = () => {
               <FaInstagram />
             </a>
             <a
-              href="mailto:jpyoarttattoo@gmail.com"
+              href={`mailto:${EMAIL}`}
               className="text-white/60 hover:text-white transition-colors hover:scale-110"
               aria-label="Email"
             >
               <MdEmail />
             </a>
             <a
-              href="https://wa.me//5566999300161?text=Olá,%20gostaria%20de%20realizar%20um%20agendamento."
+              href={WHATSAPP_URL}
               className="text-white/60 hover:text-white transition-colors hover:scale-110"
               aria-label="WhatsApp"
             >

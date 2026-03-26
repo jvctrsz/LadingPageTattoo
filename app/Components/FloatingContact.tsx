@@ -14,7 +14,7 @@ export const FloatingContact = () => {
       initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay: 1 }}
-      aria-label="Façaa contato através do WhatsApp"
+      aria-label="Faça contato através do WhatsApp"
     >
       <FaWhatsapp />
     </motion.button>
