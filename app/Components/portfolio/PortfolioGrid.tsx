@@ -5,16 +5,22 @@ import { portfolioItems } from "@/src/Utils/mockData";
 import { classNames } from "@/src/miscellaneous";
 import { PortfolioGallery } from "./PortfolioGallery";
 
-const categories = ["Todos", "Fine Line", "Blackwork", "Floral"];
+const categories = ["Todos", "Blackwork", "Fine Line", "Outros"];
+
+const MAIN_CATEGORIES = ["Blackwork", "Fine Line"];
+
+const getFilteredItems = (filter: string) => {
+  if (filter === "Todos") return portfolioItems;
+  if (filter === "Outros")
+    return portfolioItems.filter(
+      (item) => !MAIN_CATEGORIES.includes(item.category),
+    );
+  return portfolioItems.filter((item) => item.category === filter);
+}
 
 export const PortfolioGrid = () => {
   const [activeFilter, setActiveFilter] = useState("Todos");
-
-  const filteredItems =
-    activeFilter === "Todos"
-      ? portfolioItems
-      : portfolioItems.filter((item) => item.category === activeFilter);
-
+  const filteredItems = getFilteredItems(activeFilter);
   return (
     <>
       <nav
@@ -32,7 +38,7 @@ export const PortfolioGrid = () => {
                     "px-6 py-2 text-sm uppercase tracking-wider whitespace-nowrap transition-all",
                     activeFilter === category
                       ? "bg-black text-white"
-                      : "bg-neutral-100 text-black hover:bg-neutral-200"
+                      : "bg-neutral-100 text-black hover:bg-neutral-200",
                   )}
                 >
                   {category}
@@ -43,7 +49,10 @@ export const PortfolioGrid = () => {
         </div>
       </nav>
 
-      <PortfolioGallery filteredItems={filteredItems} activeFilter={activeFilter} />
+      <PortfolioGallery
+        filteredItems={filteredItems}
+        activeFilter={activeFilter}
+      />
     </>
   );
 };

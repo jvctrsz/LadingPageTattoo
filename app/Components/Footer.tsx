@@ -11,7 +11,7 @@ const Footer = () => {
             JULIA<span className="text-white/60">PEDROZO</span>
           </h3>
           <p className="text-white/60">
-            Tatuadora especialista em Fine Line, Blackwork e Floral. Sinop - MT.
+            Tatuadora especialista em Blackwork, Fine Line e outros estilos. Sinop - MT.
           </p>
         </div>
 
@@ -51,7 +51,7 @@ const Footer = () => {
           <h4 className="text-sm uppercase tracking-wider mb-4">Contatos</h4>
           <div className="flex gap-4">
             <a
-              href="https://www.instagram.com/jvctrsz/"
+              href="https://www.instagram.com/jpyoarttattoo/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/60 hover:text-white transition-colors hover:scale-110"
@@ -60,14 +60,14 @@ const Footer = () => {
               <FaInstagram />
             </a>
             <a
-              href="mailto:jvictor26dev@gmail.com"
+              href="mailto:jpyoarttattoo@gmail.com"
               className="text-white/60 hover:text-white transition-colors hover:scale-110"
               aria-label="Email"
             >
               <MdEmail />
             </a>
             <a
-              href="https://wa.me//5566999291515?text=Olá,%20gostaria%20de%20realizar%20um%20agendamento."
+              href="https://wa.me//5566999300161?text=Olá,%20gostaria%20de%20realizar%20um%20agendamento."
               className="text-white/60 hover:text-white transition-colors hover:scale-110"
               aria-label="WhatsApp"
             >

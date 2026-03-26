@@ -4,19 +4,19 @@ import { motion } from "motion/react";
 
 const specializations = [
   {
-    title: "Fine Line",
-    description:
-      "Traços delicados e precisos que resultam em tatuagens de extremo refinamento. Ideal para quem busca leveza, feminilidade e detalhes sutis na pele.",
-  },
-  {
     title: "Blackwork",
     description:
       "Composições marcantes em tinta preta, com forte apelo visual e durabilidade. Perfeito para quem quer personalidade e presença em cada traço.",
   },
   {
-    title: "Floral",
+    title: "Fine Line",
     description:
-      "Flores, folhas e botanicals interpretados com sensibilidade artística. Cada peça é única, carregando a delicadeza da natureza para a sua pele.",
+      "Traços delicados e precisos que resultam em tatuagens de extremo refinamento. Ideal para quem busca leveza, feminilidade e detalhes sutis na pele.",
+  },
+  {
+    title: "Outros",
+    description:
+      "Além das especializações principais, também trabalho com Floral, Anime, Old School e artes totalmente personalizadas.",
   },
 ];
 

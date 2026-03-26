@@ -12,7 +12,7 @@ const contactItems = [
     label: "WhatsApp",
     content: (
       <a href={WHATSAPP_URL} className="text-lg text-black/70 hover:text-black">
-        (66) 99929-1515
+        (66) 99930-0161
       </a>
     ),
   },
@@ -21,10 +21,10 @@ const contactItems = [
     label: "Email",
     content: (
       <a
-        href="mailto:jvictor26dev@gmail.com"
+        href="mailto:jpyoarttattoo@gmail.com"
         className="text-lg text-black/70 hover:text-black"
       >
-        jvictor26dev@gmail.com
+        jpyoarttattoo@gmail.com
       </a>
     ),
   },
@@ -33,12 +33,12 @@ const contactItems = [
     label: "Instagram",
     content: (
       <a
-        href="https://instagram.com/jvctrsz"
+        href="https://instagram.com/jpyoarttattoo"
         target="_blank"
         rel="noopener noreferrer"
         className="text-lg text-black/70 hover:text-black"
       >
-        @jvctrsz
+        @jpyoarttattoo
       </a>
     ),
   },
@@ -50,8 +50,8 @@ const contactItems = [
 ];
 
 const scheduleItems = [
-  { day: "Seg - Sex", hours: "09:00 - 20:00" },
-  { day: "Sábados", hours: "13:00 - 17:00" },
+  { day: "Seg - Sex", hours: "14:30 - 17:00" },
+  { day: "Sábados", hours: "14:30 - 17:00" },
   { day: "Domingo", hours: "Fechado" },
 ];
 
