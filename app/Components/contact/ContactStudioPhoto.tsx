@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 
-export const ContactStudioPhoto = () => {
+const ContactStudioPhoto = () => {
   return (
     <section aria-label="Foto do estúdio" className="py-24 bg-neutral-50">
       <motion.figure

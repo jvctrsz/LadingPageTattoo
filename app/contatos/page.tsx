@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import PageHeader from "../Components/PageHeader";
-import { ContactInfoSection } from "../Components/contact/ContactInfoSection";
-import { ContactForm } from "../Components/contact/ContactForm";
-import { ContactStudioPhoto } from "../Components/contact/ContactStudioPhoto";
+import ContactInfoSection from "../Components/contact/ContactInfoSection";
+import ContactStudioPhoto from "../Components/contact/ContactStudioPhoto";
+import ContactWhatsAppCTA from "../Components/contact/ContactWhatsAppCTA";
 
 export const metadata: Metadata = {
   title: "Contatos | Julia Pedrozo Tattoo",
@@ -28,14 +28,11 @@ export default function Contacts() {
     <main>
       <PageHeader title="Vamos Criar" subTitle="Juntos" page="Contatos" />
 
-      <section
-        aria-label="Informações de contato e formulário"
-        className="py-24 lg:py-32"
-      >
+      <section aria-label="Informações de contato" className="py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             <ContactInfoSection />
-            <ContactForm />
+            <ContactWhatsAppCTA />
           </div>
         </div>
       </section>

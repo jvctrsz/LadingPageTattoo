@@ -55,7 +55,7 @@ const scheduleItems = [
   { day: "Domingo", hours: "Fechado" },
 ];
 
-export const ContactInfoSection = () => {
+const ContactInfoSection = () => {
   return (
     <motion.div
       initial={{ opacity: 0, x: -30 }}
