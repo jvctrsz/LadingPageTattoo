@@ -19,6 +19,7 @@ const PageHeader = ({ page, subTitle, title }: PageHeaderProps) => {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
+          style={{ fontFamily: "'Didot', serif" }}
         >
           <div className="flex items-center gap-4 mb-8">
             <span className="text-black/30 text-xs uppercase tracking-[0.4em]">
