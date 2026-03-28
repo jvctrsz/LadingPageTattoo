@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "motion/react";
 import { portfolioItems } from "@/src/Utils/mockData";
+import WorkCard from "./WorkCard";
 
 type PortfolioItem = (typeof portfolioItems)[number];
 
@@ -10,7 +11,10 @@ interface PortfolioGalleryProps {
   activeFilter: string;
 }
 
-export const PortfolioGallery = ({ filteredItems, activeFilter }: PortfolioGalleryProps) => {
+export const PortfolioGallery = ({
+  filteredItems,
+  activeFilter,
+}: PortfolioGalleryProps) => {
   return (
     <section aria-label="Itens do portfólio" className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,29 +29,14 @@ export const PortfolioGallery = ({ filteredItems, activeFilter }: PortfolioGalle
             aria-label={`Trabalhos de ${activeFilter === "All" ? "todas as categorias" : activeFilter}`}
           >
             {filteredItems.map((item, index) => (
-              <motion.li
+              <WorkCard
                 key={item.id}
+                work={item}
+                variant="gallery"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="group relative aspect-3/4 overflow-hidden bg-black cursor-pointer"
-              >
-                <img
-                  src={item.image}
-                  alt={`${item.title} — ${item.category} por Julia Pedrozo`}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  loading="lazy"
-                />
-                <footer
-                  aria-hidden="true"
-                  className="absolute inset-0 flex flex-col justify-end p-6 bg-linear-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                >
-                  <span className="text-white/60 text-xs uppercase tracking-wider mb-2 block">
-                    {item.category}
-                  </span>
-                  <h3 className="text-white text-xl">{item.title}</h3>
-                </footer>
-              </motion.li>
+              />
             ))}
           </motion.ul>
         </AnimatePresence>

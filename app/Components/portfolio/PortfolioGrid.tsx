@@ -16,7 +16,7 @@ const getFilteredItems = (filter: string) => {
       (item) => !MAIN_CATEGORIES.includes(item.category),
     );
   return portfolioItems.filter((item) => item.category === filter);
-}
+};
 
 export const PortfolioGrid = () => {
   const [activeFilter, setActiveFilter] = useState("Todos");

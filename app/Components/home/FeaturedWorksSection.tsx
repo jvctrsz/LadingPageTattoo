@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import { featuredWorks } from "@/src/Utils/mockData";
 import { ButtonNav } from "@/app/Components";
 import SectionTitle from "../SectionTitle";
+import WorkCard from "../portfolio/WorkCard";
 
 export const FeaturedWorksSection = () => {
   return (
@@ -30,30 +31,15 @@ export const FeaturedWorksSection = () => {
           aria-label="Trabalhos selecionados"
         >
           {featuredWorks.map((work, index) => (
-            <motion.li
+            <WorkCard
               key={work.id}
+              work={work}
+              variant="featured"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group relative aspect-4/5 overflow-hidden bg-black"
-            >
-              <img
-                src={work.image}
-                alt={`${work.title} — ${work.category} por Julia Pedrozo`}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                loading="lazy"
-              />
-              <footer
-                aria-hidden="true"
-                className="self-end absolute bottom-0 left-0 right-0 p-6 inset-0 bg-linear-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              >
-                <span className="text-white/60 text-xs uppercase tracking-wider mb-2 block">
-                  {work.category}
-                </span>
-                <h3 className="text-white text-2xl">{work.title}</h3>
-              </footer>
-            </motion.li>
+            />
           ))}
         </ul>
 
