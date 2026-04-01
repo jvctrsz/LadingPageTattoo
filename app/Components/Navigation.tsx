@@ -33,28 +33,31 @@ const Navigation = () => {
             <span className="text-white/60">Pedrozo</span>
           </Link>
 
-          <div className="hidden md:flex items-center gap-8">
+          <ul className="hidden md:flex items-center gap-8" role="list">
             {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                href={link.path}
-                className={classNames(
-                  "text-sm uppercase tracking-wider transition-colors",
-                  pathname === link.path
-                    ? "text-white"
-                    : "text-white/60 hover:text-white",
-                )}
-                aria-current={pathname === link.path ? "page" : undefined}
-              >
-                {link.label}
-              </Link>
+              <li key={link.path}>
+                <Link
+                  href={link.path}
+                  className={classNames(
+                    "text-sm uppercase tracking-wider transition-colors",
+                    pathname === link.path
+                      ? "text-white"
+                      : "text-white/60 hover:text-white",
+                  )}
+                  aria-current={pathname === link.path ? "page" : undefined}
+                >
+                  {link.label}
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
 
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden text-white p-2"
-            aria-label="Menu Hambúrguer"
+            aria-label="Menu de navegação"
+            aria-expanded={isOpen}
+            aria-controls="mobile-menu"
           >
             {isOpen ? (
               <XMarkIcon className="size-6" />
@@ -72,22 +75,25 @@ const Navigation = () => {
               exit={{ opacity: 0, height: 0 }}
               className="md:hidden overflow-hidden"
             >
-              <div className="flex flex-col gap-4 pt-6 pb-4" role="list">
+              <ul
+                id="mobile-menu"
+                className="flex flex-col gap-4 pt-6 pb-4"
+              >
                 {navLinks.map((link) => (
-                  <Link
-                    key={link.path}
-                    href={link.path}
-                    className={classNames(
-                      "text-sm uppercase tracking-wider transition-colors",
-                      pathname === link.path ? "text-white" : "text-white/60",
-                    )}
-                    aria-current={pathname === link.path ? "page" : undefined}
-                    role="listitem"
-                  >
-                    {link.label}
-                  </Link>
+                  <li key={link.path}>
+                    <Link
+                      href={link.path}
+                      className={classNames(
+                        "text-sm uppercase tracking-wider transition-colors",
+                        pathname === link.path ? "text-white" : "text-white/60",
+                      )}
+                      aria-current={pathname === link.path ? "page" : undefined}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </motion.div>
           )}
         </AnimatePresence>
