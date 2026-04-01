@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import SectionTitle from "../SectionTitle";
 
 export const AboutStudioSection = () => {
   return (
@@ -13,21 +14,12 @@ export const AboutStudioSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl lg:text-5xl mb-8 text-black/40">Studio</h2>
+            <SectionTitle title="Meu" subTitle="Espaço" />
             <div className="space-y-6 text-lg text-black/70 leading-relaxed">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent sed justo eget arcu malesuada tincidunt quis vitae
-                velit. Praesent tempor mi id est dapibus laoreet. Vestibulum
-                eget suscipit augue. Curabitur vel tellus at magna fermentum
-                interdum. In vel tellus euismod.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent sed justo eget arcu malesuada tincidunt quis vitae
-                velit. Praesent tempor mi id est dapibus laoreet. Vestibulum
-                eget suscipit augue. Curabitur vel tellus at magna fermentum
-                interdum. In vel tellus euismod.
+                Preparei um ambiente com aconchego e tranquilidade. O estúdio
+                foi planejado para oferecer conforto e segurança, transformando
+                o seu momento em uma experiência leve.
               </p>
             </div>
           </motion.div>

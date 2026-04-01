@@ -32,25 +32,29 @@ export const AboutTrajectorySection = () => {
             <SectionTitle title="Minha" subTitle="Trajetória" />
             <div className="space-y-6 text-lg text-black/70 leading-relaxed">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent sed justo eget arcu malesuada tincidunt quis vitae
-                velit. Praesent tempor mi id est dapibus laoreet. Vestibulum
-                eget suscipit augue. Curabitur vel tellus at magna fermentum
-                interdum. In vel tellus euismod.
+                Minha história com a arte começou muito antes da tatuagem. Desde
+                sempre, fui interessada em desenhos, pinturas e na arte em
+                geral, e sempre tive o desejo de trazer essa paixão para a minha
+                vida profissional. Aos 18 anos, iniciei meu percurso no mundo da
+                tatuagem. Fiz cursos para me tornar tatuadora e passei a
+                frequentar o ambiente dos estúdios para aprender de perto, antes
+                mesmo de começar a atender. Após um ano de estudos intensos, dei
+                meus primeiros passos oficiais na área.
               </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent sed justo eget arcu malesuada tincidunt quis vitae
-                velit. Praesent tempor mi id est dapibus laoreet. Vestibulum
-                eget suscipit augue. Curabitur vel tellus at magna fermentum
-                interdum. In vel tellus euismod.
+                Hoje, já são 3 anos trabalhando como tatuadora. Ao longo desse
+                tempo, me especializei em vários estilos, focando naquilo que
+                mais me traz inspiração: o Blackwork. Procuro evoluir minhas
+                técnicas a cada dia para entregar sempre a melhor qualidade em
+                cada trabalho.
               </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent sed justo eget arcu malesuada tincidunt quis vitae
-                velit. Praesent tempor mi id est dapibus laoreet. Vestibulum
-                eget suscipit augue. Curabitur vel tellus at magna fermentum
-                interdum. In vel tellus euismod.
+                É uma imensa realização trabalhar com arte e ter me encontrado
+                na tatuagem. Poder colocar um pouquinho da minha essência em
+                cada desenho e deixar isso marcado em outras pessoas é algo
+                muito especial para mim. Agradeço a todos que estiveram comigo
+                nesse percurso e por me ajudarem a conquistar o meu próprio
+                espaço.
               </p>
             </div>
           </motion.div>
