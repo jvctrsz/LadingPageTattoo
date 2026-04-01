@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function FaqPage() {
   return (
-    <main className="flex flex-col gap-10 bg-white">
+    <main className="bg-white">
       <PageHeader page="FAQ" title="Dúvidas" subTitle="Frequentes" />
       <FAQList />
       <FAQCta />

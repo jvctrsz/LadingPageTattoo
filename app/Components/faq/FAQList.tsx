@@ -9,7 +9,7 @@ export const FAQList = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section aria-label="Perguntas frequentes">
+    <section aria-label="Perguntas frequentes" className="py-24 lg:py-32">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
