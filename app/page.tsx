@@ -5,21 +5,23 @@ import { FeaturedWorksSection } from "./Components/home/FeaturedWorksSection";
 export const metadata: Metadata = {
   title: "Julia Pedrozo Tattoo | Tatuadora em Sinop - MT",
   description:
-    "Portfólio de Julia Pedrozo, tatuadora especialista em Fine Line, Blackwork e Floral em Sinop - MT. Agende sua tatuagem.",
+    "Portfólio de Julia Pedrozo, tatuadora especialista em Blackwork e Fine Line em Sinop - MT. Também atende Anime, Old School e Floral. Agende sua tatuagem.",
   keywords: [
     "tatuadora",
     "tattoo",
     "sinop",
+    "sinop mt",
     "fine line",
     "blackwork",
-    "anime",
+    "anime tattoo",
     "old school",
     "julia pedrozo",
+    "tatuadora sinop",
   ],
   openGraph: {
     title: "Julia Pedrozo Tattoo | Tatuadora em Sinop - MT",
     description:
-      "Portfólio de Julia Pedrozo, tatuadora especialista em Fine Line, Blackwork e Floral em Sinop - MT.",
+      "Portfólio de Julia Pedrozo, tatuadora especialista em Blackwork e Fine Line em Sinop - MT. Também atende Anime, Old School e Floral.",
     type: "website",
     locale: "pt_BR",
   },

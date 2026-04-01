@@ -7,7 +7,7 @@ import { AboutStudioSection } from "../Components/about/AboutStudioSection";
 export const metadata: Metadata = {
   title: "Sobre | Julia Pedrozo Tattoo",
   description:
-    "Conheça a trajetória de Julia Pedrozo, tatuadora especialista em Fine Line, Blackwork, Anime e Old School em Sinop, MT.",
+    "Conheça a trajetória de Julia Pedrozo, tatuadora especialista em Blackwork e Fine Line em Sinop, MT. Também atende Anime, Old School e Floral.",
   keywords: [
     "sobre julia pedrozo",
     "tatuadora sinop",
@@ -15,11 +15,13 @@ export const metadata: Metadata = {
     "studio tattoo sinop",
     "blackwork",
     "fine line",
+    "anime tattoo",
+    "old school",
   ],
   openGraph: {
     title: "Sobre | Julia Pedrozo Tattoo",
     description:
-      "Conheça a trajetória de Julia Pedrozo, tatuadora especialista em Fine Line, Blackwork, Anime e Old School em Sinop, MT.",
+      "Conheça a trajetória de Julia Pedrozo, tatuadora especialista em Blackwork e Fine Line em Sinop, MT. Também atende Anime, Old School e Floral.",
     type: "website",
     locale: "pt_BR",
   },

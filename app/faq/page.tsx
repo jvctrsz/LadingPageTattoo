@@ -4,20 +4,21 @@ import { FAQList } from "../Components/faq/FAQList";
 import { FAQCta } from "../Components/faq/FAQCta";
 
 export const metadata: Metadata = {
-  title: "FAQ | Julia Pedrozo Tattoo",
+  title: "Dúvidas Frequentes | Julia Pedrozo Tattoo",
   description:
-    "Dúvidas frequentes sobre tatuagem com Julia Pedrozo em Sinop - MT. Saiba tudo sobre cuidados, agendamento, orçamento e estilos.",
+    "Tire suas dúvidas sobre tatuagem com Julia Pedrozo em Sinop - MT. Veja informações sobre orçamento, agendamento, cuidados pós-tattoo, pagamento e estilos disponíveis.",
   keywords: [
-    "faq",
     "dúvidas tatuagem",
-    "cuidados tatuagem",
-    "agendamento tattoo",
+    "perguntas frequentes tatuagem",
+    "cuidados pós tatuagem",
+    "agendamento tattoo sinop",
+    "orçamento tatuagem sinop",
     "julia pedrozo",
   ],
   openGraph: {
-    title: "FAQ | Julia Pedrozo Tattoo",
+    title: "Dúvidas Frequentes | Julia Pedrozo Tattoo",
     description:
-      "Dúvidas frequentes sobre tatuagem com Julia Pedrozo em Sinop - MT.",
+      "Tire suas dúvidas sobre orçamento, agendamento, cuidados pós-tattoo e estilos disponíveis com Julia Pedrozo em Sinop - MT.",
     type: "website",
     locale: "pt_BR",
   },

@@ -43,7 +43,6 @@ export const HeroMobile = () => {
             <h1
               className="text-4xl font-bold mb-4 text-black/90"
               style={{ fontFamily: "'Didot', serif" }}
-              aria-hidden="true"
             >
               Julia Pedrozo
             </h1>
