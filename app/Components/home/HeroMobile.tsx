@@ -21,10 +21,10 @@ export const HeroMobile = () => {
           >
             <div className="relative aspect-3/4 overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1769605767701-6e5a680ef685?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMHRhdHRvbyUyMGFydGlzdCUyMGNyZWF0aXZlfGVufDF8fHx8MTc3MzcxNzA3NHww&ixlib=rb-4.1.0&q=80&w=1080"
+                src="/images/tattoo-principal.webp"
                 alt="Julia Pedrozo - Tatuadora em Sinop, MT"
                 fill
-                sizes="100vw"
+                sizes="(max-width: 640px) calc(100vw - 2rem), calc(100vw - 3rem)"
                 className="object-cover"
                 priority
               />

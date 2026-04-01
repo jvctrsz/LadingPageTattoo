@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import SectionTitle from "../SectionTitle";
+import Image from "next/image";
 
 export const AboutTrajectorySection = () => {
   return (
@@ -15,11 +16,12 @@ export const AboutTrajectorySection = () => {
             transition={{ duration: 0.6 }}
             className="aspect-3/4 overflow-hidden m-0"
           >
-            <img
-              src="https://images.unsplash.com/photo-1769605767701-6e5a680ef685?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMHRhdHRvbyUyMGFydGlzdCUyMGNyZWF0aXZlfGVufDF8fHx8MTc3MzcxNzA3NHww&ixlib=rb-4.1.0&q=80&w=1080"
+            <Image
+              src="/images/tattoo-principal.webp"
               alt="Julia Pedrozo - Tatuadora em Sinop, MT"
-              className="w-full h-full object-cover"
-              loading="lazy"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
             />
           </motion.figure>
 
