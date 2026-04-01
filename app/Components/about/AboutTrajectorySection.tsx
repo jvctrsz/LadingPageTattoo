@@ -14,7 +14,7 @@ export const AboutTrajectorySection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="aspect-3/4 overflow-hidden m-0"
+            className="relative aspect-3/4 overflow-hidden m-0"
           >
             <Image
               src="/images/tattoo-principal.webp"
